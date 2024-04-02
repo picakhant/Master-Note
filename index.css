@@ -14,6 +14,24 @@ body{
     margin: 0;
 }
 
+.menu-offcanvas{
+    background-color: red;
+    width: 50%;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right:0;
+    z-index: 1;
+    height: 100%;
+    display: none;
+}
+
+.menu-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 @media screen and (min-width: 320px) {
     
@@ -24,12 +42,15 @@ body{
     ul{
         display: none;
     }
+
+    .navbar-toggle{
+        font-size: 35px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
-  
 
-    button{
+    .navbar-toggle{
         display: none;
     }
 
