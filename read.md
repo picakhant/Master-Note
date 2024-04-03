@@ -76,4 +76,9 @@ console.log(person.isEating()); // mg mg is eating
 
 console.log(person["isEating"]())
 
+-- JSON --
+JS Obj --> JSON (JSON.stringify(obj))
+JSON --> JS Obj (JSON.parse(json))
+
+
 -- // --
