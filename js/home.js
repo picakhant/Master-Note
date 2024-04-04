@@ -9,3 +9,11 @@ navbarToggle.addEventListener("click", () => {
 navbarOffcanvasClose.addEventListener("click", () => {
   navbarOffcanvas.style.display = "none";
 });
+
+window.addEventListener("load", () => {
+  if (localStorage.getItem("userinfo")) {
+    console.log("User is signed up");
+  } else {
+    window.location.href = "../html/signup.html";
+  }
+});

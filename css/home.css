@@ -14,6 +14,11 @@ body{
     margin: 0;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .menu-offcanvas{
     background-color: red;
     width: 50%;
@@ -25,6 +30,7 @@ body{
     height: 100%;
     display: none;
 }
+
 
 .menu-header{
     display: flex;

@@ -18,16 +18,7 @@ const user = {};
  }
  */
 
-submitBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-  console.log("user is ", user);
-
-  //input values
-  const username = nameInp.value;
-  const email = emailInp.value;
-  const password = passwordInp.value;
-  const confirmPassword = retypePasswordInp.value;
-
+const handleUserData = (username, email, password) => {
   //add data to object
   user.username = username;
   user.email = email;
@@ -36,4 +27,39 @@ submitBtn.addEventListener("click", (e) => {
   //convert user obj to JSON
   const userJSON_Data = JSON.stringify(user);
   localStorage.setItem("userinfo", userJSON_Data);
+
+  //change address window address
+  window.location.href = "../html/home.html";
+};
+
+submitBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  //input values
+  const username = nameInp.value;
+  const email = emailInp.value;
+  const password = passwordInp.value;
+  const confirmPassword = retypePasswordInp.value;
+
+  //check form
+  if (
+    username === "" ||
+    email === "" ||
+    password === "" ||
+    confirmPassword === ""
+  ) {
+    alert("Fill all field");
+  } else if (password !== confirmPassword) {
+    alert("Password doesn't match!");
+  } else if (password.length < 4) {
+    alert("Password must be at least 4 character!");
+  } else {
+    handleUserData(username, email, password);
+  }
+});
+
+window.addEventListener("load", () => {
+  if (localStorage.getItem("userinfo")) {
+    window.location.href = "../html/home.html";
+  }
 });
