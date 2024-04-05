@@ -12,8 +12,17 @@ navbarOffcanvasClose.addEventListener("click", () => {
 
 window.addEventListener("load", () => {
   if (localStorage.getItem("userinfo")) {
-    console.log("User is signed up");
+    return;
   } else {
     window.location.href = "../html/signup.html";
   }
 });
+
+/**
+ * title, Body, date, modified-date, edit, delete
+ */
+
+const array = ['a', 'b', 'c', 'd', 'e']
+
+
+

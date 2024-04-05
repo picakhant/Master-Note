@@ -80,5 +80,28 @@ console.log(person["isEating"]())
 JS Obj --> JSON (JSON.stringify(obj))
 JSON --> JS Obj (JSON.parse(json))
 
+-- Array --
+Array.lenght => conunt of item in an array
+const myArray1 = ["a", "e", "i"];
+const myArray2 = ["o", "u", "i"];
+
+const myArray3 = myArray1.concat(myArray2);
+const myArray4 = ["A", "B"]
+
+// spread operator
+const myArray5 = [...myArray1, ...myArray2, ...myArray4]
+
+console.log(myArray5)
+
+const fruit = ["apple", "orange",];
+
+//add last
+fruit.push("banana");
+//add first
+fruit.unshift("pineapple");
+// reomve first item
+fruit.shift("pineapple");
+// reomve last item
+fruit.pop("banana");
 
 -- // --

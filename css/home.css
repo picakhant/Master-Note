@@ -38,6 +38,35 @@ a{
     align-items: center;
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 80vh;
+    padding: 10px;
+}
+
+input{
+    font-size: 25px;
+    font-weight: bold;
+    height: 50px;
+    padding: 0 10px;
+    width: 100%;
+}
+
+textarea{
+    height: 100%;
+    font-size: 18px;
+    padding: 1dvb;
+}
+
+.form-header{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+
 
 @media screen and (min-width: 320px) {
     
