@@ -1,0 +1,13 @@
+.delete-alert{
+    background-color: rgb(162, 54, 54);
+    width: 200px;
+    height: 100px;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    position: fixed;
+    z-index: 1;
+    top: 30px;
+    right: 20px;
+}

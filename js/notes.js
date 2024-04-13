@@ -5,8 +5,6 @@ window.addEventListener("load", () => {
   }
 });
 
-// [{note1}, {not2}]
-
 //get all notes
 const notesData = JSON.parse(localStorage.getItem("notes"));
 const noteCount = document.getElementById("note-count");
@@ -22,11 +20,21 @@ if (notesData !== null) {
     listNote.classList.add("list-note");
 
     listNote.innerHTML = `
-    <h1>${notesData[i].title}</h1>
-    <h3>${notesData[i].createdAt}</h3>
-    <p>${notesData[i].body}</p>
-    
+    <div class="note-header">
+       <h3 class="note-title">${notesData[i].title}</h3>
+       <p class="note-date">${notesData[i].createdAt}</p>
+    </div>
+    <p class="note-body">${notesData[i].body.substr(0, 201)}...</p>    
   `;
+
+    const readMoreBtn = document.createElement("button");
+    readMoreBtn.textContent = "Read More";
+
+    readMoreBtn.addEventListener("click", () => {
+      window.location.href = `../html/detail.html?id=${notesData[i].id}`;
+    });
+
+    listNote.append(readMoreBtn);
     noteContainer.append(listNote);
   }
 } else {

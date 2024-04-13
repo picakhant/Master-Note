@@ -1,0 +1,38 @@
+.list-note{
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid rgb(21, 13, 246);
+}
+
+.note-title{
+   margin: 0;
+}
+
+.note-date{
+    margin: 0;
+}
+
+.note-body{
+    margin: 0;
+    text-align: justify;
+}
+
+#notes-container{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.note-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.read-more{
+    display: block;
+    margin: 10px 0 0 auto;
+}

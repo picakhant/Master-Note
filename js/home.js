@@ -23,7 +23,7 @@ const titleInp = document.getElementsByTagName("input")[0];
 const bodyInp = document.getElementsByTagName("textarea")[0];
 
 // Note Array
-let notes = [];
+let notes = []; 
 
 window.addEventListener("load", () => {
   if (localStorage.getItem("notes")) {
@@ -64,7 +64,7 @@ saveBtn.addEventListener("click", (e) => {
     return;
   }
 
-  if (body.length > 2200) {
+  if (body.length > 200000) {
     alert("Body is in limited!");
     return;
   }
