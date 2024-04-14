@@ -1,0 +1,30 @@
+form{
+    height: 100vh;
+    display: block;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 10px auto;
+    gap: 10px
+
+}
+
+input, textarea{
+    display: block;
+    margin: 10px auto;
+    height: 30px;
+    font-size: 25px;
+}
+
+input{
+    width: 100%
+}
+
+textarea{
+    width: 90%;
+    font-size: 15px;
+    height: 70%;
+}

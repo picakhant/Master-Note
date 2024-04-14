@@ -44,3 +44,7 @@ okBtn.addEventListener("click", () => {
   localStorage.setItem("notes", JSON.stringify(updatedNote));
   window.location.href = "../html/notes.html";
 });
+
+updateBtn.addEventListener("click", () => {
+  window.location.href = `../html/update.html?update_id=${id}`;
+});
