@@ -23,7 +23,7 @@ const titleInp = document.getElementsByTagName("input")[0];
 const bodyInp = document.getElementsByTagName("textarea")[0];
 
 // Note Array
-let notes = []; 
+let notes = [];
 
 window.addEventListener("load", () => {
   if (localStorage.getItem("notes")) {
@@ -45,6 +45,18 @@ const formatDate = (date) => {
   const formattedDate = `${day}/${month}/${year}`;
 
   return formattedDate;
+};
+
+// Generate ID
+const generateRandomId = (length) => {
+  const characters =
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  let result = "";
+  for (let i = 0; i < length; i++) {
+    const randomIndex = Math.floor(Math.random() * characters.length);
+    result += characters[randomIndex];
+  }
+  return result;
 };
 
 saveBtn.addEventListener("click", (e) => {
@@ -71,7 +83,7 @@ saveBtn.addEventListener("click", (e) => {
 
   // creat note object
   const noteObj = {
-    id: notes.length,
+    id: generateRandomId(8),
     title: title,
     body: body,
     createdAt: formatDate(Date.now()),

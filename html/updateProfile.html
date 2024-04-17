@@ -5,22 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maste Note | Update Profile</title>
     <link rel="shortcut icon" href="../img/notes.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../util.css" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/updateProfile.css" />
     <style>
-      input {
-        display: block;
-        margin: 10px;
+      @import url("https://fonts.googleapis.com/css2?family=Jersey+10&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+      /* rgular font */
+      * {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 400;
+        font-style: normal;
       }
     </style>
   </head>
   <body>
-    <h1>Update</h1>
+    <div class="navbar">
+      <a href="../html/home.html">
+        <div class="brand">
+          <img src="../img/notes.png" style="height: 45px" alt="" />
+          <span>Master Note</span>
+        </div>
+      </a>
+      <ul>
+        <li>
+          <a href="../html/home.html">Home</a>
+        </li>
+        <li>
+          <a href="./notes.html">Notes</a>
+        </li>
+        <li>
+          <a href="./profile.html"> Profile </a>
+        </li>
+      </ul>
+      <!-- navbar toggle btn -->
+      <i class="fa-solid fa-bars navbar-toggle"></i>
+    </div>
+    <!-- menu offcanvas -->
+    <div class="menu-offcanvas">
+      <div class="menu-header">
+        <h3>Menu</h3>
+        <i
+          class="fa-solid fa-xmark"
+          style="font-size: 25px"
+          id="menu-offcanvas-close"
+        ></i>
+      </div>
+      <hr />
+      <h3>
+        <a href="../html/home.html">Home</a>
+      </h3>
+      <h3>
+        <a href="../html/notes.html">Notes</a>
+      </h3>
+      <h3>
+        <a href="../html/profile.html">Profile</a>
+      </h3>
+    </div>
+
     <form>
+      <h1>Update</h1>
       <input type="text" placeholder="Username" value="" />
       <input type="eamil" placeholder="Email Address" value="" />
       <input type="text" placeholder="Password" />
-      <button type="submit">Update</button>
+      <button type="submit" class="btn-primary">Update</button>
     </form>
+    <script>
+      const navbarToggle = document.getElementsByTagName("i")[0];
+      const navbarOffcanvas =
+        document.getElementsByClassName("menu-offcanvas")[0];
+      const navbarOffcanvasClose = document.getElementById(
+        "menu-offcanvas-close"
+      );
 
+      navbarToggle.addEventListener("click", () => {
+        navbarOffcanvas.style.display = "block";
+      });
+
+      navbarOffcanvasClose.addEventListener("click", () => {
+        navbarOffcanvas.style.display = "none";
+      });
+    </script>
     <script src="../js/update.js"></script>
   </body>
 </html>

@@ -27,8 +27,11 @@ if (notesData !== null) {
     <p class="note-body">${notesData[i].body.substr(0, 201)}...</p>    
   `;
 
-    const readMoreBtn = document.createElement("button");
+    const readMoreBtn = document.createElement("a");
     readMoreBtn.textContent = "Read More";
+    readMoreBtn.style.textDecoration = "underline"
+    readMoreBtn.style.color = "blue"
+    readMoreBtn.style.cursor = "pointer"
 
     readMoreBtn.addEventListener("click", () => {
       window.location.href = `../html/detail.html?id=${notesData[i].id}`;

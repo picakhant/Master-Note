@@ -1,0 +1,56 @@
+/* CSS */
+.btn-primary, .btn-secondary {
+  background-color: #3d5af1;
+  border: 1px solid #3d5af1;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  outline: 0;
+  padding: 10px 25px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn-primary:hover {
+  box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+
+.btn-secondary{
+    background-color: #0e153a;
+    border: 1px solid #0e153a;
+}
+
+.btn-secondary:hover {
+    box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+    transform: translateY(-2px);
+  }
+
+@media (min-width: 768px) {
+  .btn-primary, .btn-secondary  {
+    padding: 10px 30px;
+  }
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.d-block{
+    display: block;
+}
+
+.w-100{
+    width: 100%;
+}

@@ -6,16 +6,28 @@
     <title>Master Note</title>
     <link rel="shortcut icon" href="./img/notes.png" type="image/x-icon" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="util.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Jersey+10&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+      /* rgular font */
+      * {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+    </style>
   </head>
   <body>
     <div class="hero">
+      <img src="./img/notes.png" alt="note-logo">
       <h1>Welcome from Master-Note</h1>
       <p>Light weight and flexibal localstorage base app!</p>
       <div class="">
-        <button>
+        <button class="btn-primary">
           <a href="./html/signup.html">Sign Up</a>
         </button>
-        <button>Login</button>
+        <button class="btn-secondary" id="login">Login</button>
       </div>
     </div>
     <script src="index.js"></script>

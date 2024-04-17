@@ -22,12 +22,17 @@ const cancelBtn = document.getElementsByClassName("cancel")[0];
 const okBtn = document.getElementsByClassName("ok")[0];
 
 deleteBtn.textContent = "Delete";
+deleteBtn.classList.add("btn-secondary")
 updateBtn.textContent = "Update";
+updateBtn.classList.add("btn-primary")
 
 btnContainer.append(updateBtn, deleteBtn);
+btnContainer.style.display = "flex"
+btnContainer.style.gap = "10px"
 
 header.textContent = userChoiceNote[0].title;
 textBody.textContent = userChoiceNote[0].body;
+textBody.style.textAlign = "justify"
 
 container.append(header, btnContainer, textBody);
 

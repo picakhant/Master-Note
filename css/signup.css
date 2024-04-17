@@ -1,33 +1,18 @@
 input{
-    display: block;
-    margin: 10px;
     width: 360px;
     height: 35px;
-    padding: 5px 8px;
+    display: block;
+    padding: 8px 10px;
     font-size: 18px;
-    border-radius: 8px;
+    border-radius: 5px;
     border-width: 2px;
-    border-color: rgb(5, 5, 238);
+    border-color: #3d5af1;
     border-style: solid;
 }
 
 input:focus{
     outline: none;
-}
-
-button{
-    width: 362px;
-    padding: 8px;
-    font-size: 18px;
-    border-radius: 8px;
-    background-color: rgb(5, 5, 238);
-    color: #fff;
-    border: none;
-}
-
-button:hover{
-    background-color: rgb(5, 5, 180);
-    cursor:pointer  ;
+    border-color: #142ca8;
 }
 
 body{
@@ -35,10 +20,15 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #e2f3f5;
 }
 
 form{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0;
+    gap: 10px;
 }

@@ -1,5 +1,10 @@
 .brand{
     font-size: 30px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    user-select: none;
+    cursor: pointer;
 }
 
 
@@ -8,10 +13,13 @@
     justify-content: space-between;
     align-items: center;
     background-color: #3d5af1;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
 }
 
 body{
     margin: 0;
+    padding: 0;
+    background-color: #e2f3f5;
 }
 
 a{
@@ -20,7 +28,8 @@ a{
 }
 
 .menu-offcanvas{
-    background-color: red;
+    background-color: #0e153a;
+    color: #fff;
     width: 50%;
     padding: 10px;
     position: absolute;
@@ -52,12 +61,40 @@ input{
     height: 50px;
     padding: 0 10px;
     width: 100%;
+    display: block;
+    padding: 8px 10px;
+    border: none;
+    background-color: #e2f3f5;
+    /* border-radius: 5px;
+    border-width: 2px;
+    border-color: #3d5af1;
+    border-style: solid; */
+}
+
+input:focus{
+    outline: none;
+    border-bottom: 2px solid #142ca8;
+}
+
+textarea:focus{
+    outline: none;
+    border-bottom: 2px solid #142ca8;
+    border-top: 2px solid #142ca8;
+
 }
 
 textarea{
     height: 100%;
     font-size: 18px;
     padding: 10px;
+    display: block;
+    padding: 8px 10px;
+    background-color: #e2f3f5;
+    border: none;
+    /* border-radius: 5px;
+    border-width: 2px;
+    border-color: #3d5af1;
+    border-style: solid; */
 }
 
 .form-header{

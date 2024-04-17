@@ -16,4 +16,9 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: #e2f3f5;
+}
+
+img{
+    height: 100px;
 }
