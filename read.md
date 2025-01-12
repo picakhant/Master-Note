@@ -111,4 +111,11 @@ fruit.pop("banana");
 
 <iframe src="https://iframe.ly/api/oembed?url=https://appwrite.io/docs/quick-starts/nextjs" width="600" height="200" style="border:none;"></iframe>
 
+<RichPreview 
+  title="Appwrite Next.js Quick Start Guide" 
+  description="Step-by-step tutorial for integrating Appwrite with a Next.js project. Learn how to set up authentication, databases, and more." 
+  url="https://appwrite.io/docs/quick-starts/nextjs" 
+  image="https://appwrite.io/images/github.png" 
+/>
+
 
