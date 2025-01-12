@@ -105,3 +105,7 @@ fruit.shift("pineapple");
 fruit.pop("banana");
 
 -- // --
+
+[Visit OpenAI](https://openai.com)
+
+
