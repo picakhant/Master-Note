@@ -109,3 +109,6 @@ fruit.pop("banana");
 [Visit OpenAI](https://openai.com)
 
 
+<iframe src="https://iframe.ly/api/oembed?url=https://appwrite.io/docs/quick-starts/nextjs" width="600" height="200" style="border:none;"></iframe>
+
+
